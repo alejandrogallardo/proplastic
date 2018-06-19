@@ -21,7 +21,12 @@
             </a>
         </div>
         <!-- Start Menu Bar -->
-        <div class="m1 menu">
+        <div id="burguer" class="bb" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div> 
+        <div id="navB" class="m1 menu active">
 
             <div id="menu-center">
                 <ul>
@@ -174,6 +179,22 @@
     $(document).ready(function () {
         $(".fancybox").fancybox();
     });
+
+    const $burguer = document.getElementById('burguer');
+    const $navbar = document.getElementById('navB');
+    const $menu = document.getElementById('menu-center');
+    $burguer.addEventListener('touchstart', toggleMenu);
+    $menu.addEventListener('click', toggleMenu);
+    function toggleMenu () {
+        $navbar.classList.toggle('active')
+        $navbar.classList.toggle("change");
+        $menu.classList.remove('active')
+    };
+
+//     function myFunction(x) {
+//     x.classList.toggle("change");
+//     x.classList.remove('change')
+// }
 </script>
 
 </html>
