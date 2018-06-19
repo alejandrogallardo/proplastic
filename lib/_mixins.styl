@@ -1,0 +1,68 @@
+page-width = 80%
+mixin-max-width(width = page-width)
+    max-width width
+
+// Start Mixins Header
+mixin-header()
+    background-image: url("../img/m-header.jpg")
+    background-repeat: no-repeat
+    background-size: 100%
+    background-attachment: fixed;
+    height: 600px
+
+mixin-headerLogo()
+    padding 15px
+    width: 8%
+    float left
+    position: fixed
+    z-index 2 
+
+mixin-logo-hover()
+    fill: menu-hover
+    width: 9%
+// End Mixins Header
+
+// Start Mixins Navbar
+mixin-navbar()
+    background-color: transparent
+    position: fixed
+    display: flex
+    justify-content: flex-end
+    width: 100%
+    height 15%
+    top: 0
+    z-index 1
+
+mixin-navbar-li()
+    display: inline-block
+    padding: 35px 8px 35px 8px
+    font-size: 1.2em
+
+mixin-navbar-hover()
+    color: menu-hover
+    text-decoration: none
+
+// End Mixins Navbar
+
+// Start Mixins Sections
+mixin-elements()
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+
+mixin-contenedor()
+    width 90%
+    text-align: center
+    margin: 0 auto
+    border: 1px solid black
+    border-radius: 10px
+    padding-top: 20px
+    padding-bottom: 20px
+
+mixin-items()
+    padding: 20px
+    font-size: 1.2em
+mixin-hijos()
+    width 150px
+    height 150px
+// End Mixins Sections 
