@@ -8,51 +8,42 @@
     <link rel="shorcut icon" type="image/x-icon" href="img/iconosProplast/favicon.ico">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
 </head>
-
 <body>
+    <!-- Start Menu Bar -->
+    <div class="mMenu">
+        <nav>
+            <a class="logo-link" href="#ini">
+                <img src="img/proplasticLogo.svg" alt="Logo ProPlast">
+            </a>
+            <ul>
+                <li>
+                    <a class="active" href="#home">Inicio</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Quienes Somos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contacto</a>
+                </li>
+                <li>
+                    <a href="juguetes.html">Jueguetilandia</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End Menu Bar -->
     <!-- Start Header -->
     <div id="ini" class="header">
-        <div class="headerLogo">
-            <a href="#ini">
-                <img src="img/proplasticLogo.svg" alt="Logo ProPlastic">
-            </a>
-        </div>
-        <!-- Start Menu Bar -->
-        <div id="burguer" class="bb" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div> 
-        <div id="navB" class="m1 menu active">
-
-            <div id="menu-center">
-                <ul>
-                    <li>
-                        <a class="active" href="#home">Inicio</a>
-
-                    </li>
-                    <li>
-                        <a href="#portfolio">Quienes Somos</a>
-
-                    </li>
-                    <li>
-                        <a href="juguetes.html">Jueguetilandia</a>
-
-                    </li>
-                    <li>
-                        <a href="#contact">Contacto</a>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Menu Bar -->
         <!-- Header Text -->
         <div>
-            <p class="test">Somos una fábrica de plasticos industriales con mas de 10 años en el mercado guatemalteco ofreciendo productos de calidad.</p>
+            <p class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veniam architecto placeat a quis sequi distinctio,
+                accusamus, delectus eveniet, provident asperiores amet cupiditate vel fuga temporibus alias in voluptatum
+                ad?</p>
         </div>
     </div>
     <!-- End Header -->
@@ -92,8 +83,8 @@
                 <h2>Je m'appell Alejandro</h2>
             </div>
         </div>
-    <!-- End Slide Show  -->
-    
+        <!-- End Slide Show  -->
+
     </section>
     <!-- Start Our Services -->
     <section id="portfolio">
@@ -101,29 +92,42 @@
             <div class="items">
                 <h2>Entrega</h2>
                 <i class="fas fa-truck fa-5x iconos"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a delectus quod molestiae blanditiis quibusdam eveniet quos accusantium, sunt aliquam iste, officia quis, illum numquam voluptatem dolore quo deleniti inventore!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores a delectus quod molestiae blanditiis quibusdam
+                    eveniet quos accusantium, sunt aliquam iste, officia quis, illum numquam voluptatem dolore quo deleniti
+                    inventore!</p>
             </div>
             <div class="items">
                 <h2>Plasticos Industriales</h2>
                 <i class="fas fa-industry fa-5x iconos"></i>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo iusto distinctio, facilis ullam reiciendis amet itaque suscipit? Minus officiis similique fuga labore? Magnam, ex velit. Velit aut deserunt nulla minima?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo iusto distinctio, facilis ullam reiciendis
+                    amet itaque suscipit? Minus officiis similique fuga labore? Magnam, ex velit. Velit aut deserunt nulla
+                    minima?</p>
             </div>
             <div class="items">
                 <h2>Puntualidad</h2>
                 <i class="far fa-calendar-check fa-5x iconos"></i>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quibusdam ex, libero, cumque quia, sequi possimus sunt eaque asperiores fugiat vel dolorem ea? Accusamus qui aliquam earum ipsum fugiat eum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quibusdam ex, libero, cumque quia, sequi possimus
+                    sunt eaque asperiores fugiat vel dolorem ea? Accusamus qui aliquam earum ipsum fugiat eum.</p>
             </div>
         </div>
     </section>
     <section id="about"></section>
     <section id="contact"></section>
-
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            <p>Derechos Reservados PROPLAST 2018</p>
+        </div>
+        <div class="develop">
+            <p>Web Developer:
+                <a href="http://alejandro-gallardo.com">alejandro-gallardo.com</a>
+            </p>
+        </div>
+    </footer>
 </body>
 <script type="text/javascript">
+    // start scroll
     $(document).ready(function () {
         $(document).on("scroll", onScroll);
-
-        //smoothscroll
         $('a[href^="#"]').on('click', function (e) {
             e.preventDefault();
             $(document).off("scroll");
@@ -133,12 +137,11 @@
             })
             $(this).addClass('active');
 
-            var target = this.hash,
-                menu = target;
+            var target = this.hash;
             $target = $(target);
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top + 2
-            }, 1000, 'swing', function () {
+            }, 500, 'swing', function () {
                 window.location.hash = target;
                 $(document).on("scroll", onScroll);
             });
@@ -146,19 +149,21 @@
     });
 
     function onScroll(event) {
-        var scrollPos = $(document).scrollTop();
-        $('#menu-center a').each(function () {
-            var currLink = $(this);
-            var refElement = $(currLink.attr("href"));
-            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                $('#menu-center ul li a').removeClass("active");
-                currLink.addClass("active");
+        var scrollPosition = $(document).scrollTop();
+        $('nav a').each(function () {
+            var currentLink = $(this);
+            var refElement = $(currentLink.attr("href"));
+            if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+                $('nav ul li a').removeClass("active");
+                currentLink.addClass("active");
             }
             else {
-                currLink.removeClass("active");
+                currentLink.removeClass("active");
             }
         });
     }
+    // end scroll
+
     //   automatico
     var slideIndex = 0;
 
@@ -175,21 +180,22 @@
         slides[slideIndex - 1].style.display = "block";
         setTimeout(showSlides, 3000); // Change image every 2 seconds
     }
+ 
+//    $(document).ready(function () {
+  //      $(".fancybox").fancybox();
+   // }); 
 
-    $(document).ready(function () {
-        $(".fancybox").fancybox();
-    });
-
-    const $burguer = document.getElementById('burguer');
-    const $navbar = document.getElementById('navB');
-    const $menu = document.getElementById('menu-center');
-    $burguer.addEventListener('touchstart', toggleMenu);
-    $menu.addEventListener('click', toggleMenu);
-    function toggleMenu () {
-        $navbar.classList.toggle('active')
-        $navbar.classList.toggle("change");
-        $menu.classList.remove('active')
-    };
+    // burger button
+    // const $burguer = document.getElementById('burguer');
+    // const $navbar = document.getElementById('navB');
+    // const $menu = document.getElementById('menu-center');
+    // $burguer.addEventListener('touchstart', toggleMenu);
+    // $menu.addEventListener('click', toggleMenu);
+    // function toggleMenu () {
+    //     $navbar.classList.toggle('active')
+    //     $navbar.classList.toggle("change");
+    //     $menu.classList.remove('active')
+    // };
 
 //     function myFunction(x) {
 //     x.classList.toggle("change");
