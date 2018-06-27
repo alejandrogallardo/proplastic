@@ -1,59 +1,15 @@
 @import "../lib/_varProP.styl"
 @import "../lib/_mixins.styl"
-@import "../lib/_mixins-responsive.styl"    
+@import "../lib/_mixins-responsive.styl"
+@import "../lib/_menu-bar.styl"    
     
 *{
     margin 0
     border 0
 }
-// Start Master Menu ---------------------------------
-.logo-link img{
-    width 100px
-    float left
-    padding: 13px 30px 0px 15px
-}
-.mMenu {
-	position: fixed
-    top: 0
-	width: 100%
-	height: 80px
-	background: nav-bar
-    z-index 1
-    margin 0
-}
-nav {
-	width: 100%
-	height: 80px 
-}
-nav ul {
-	margin: 15px 0 0
-    float: right 
-}
-nav ul li {
-	display: inline-block
-	margin: 0 30px 0 0
-}
-a { 
-    color: #4D4D4D  
-    font-family: 'Roboto', sans-serif 
-    text-transform: uppercase 
-    text-decoration: none 
-    line-height: 42px 
-}
-.active { 
-    color: linkHover
-}
-// start burguer button
-
-// end burguer button
-
-// Start Menu responsive
-
-// End Menu responsive
-// Menu Master End ------------------------------------
 // Start Header -------------------------------  
 .header{
-    background-color: nav-bar
+    background-color: blue
     height 90vh
     }   
 .test{
@@ -64,56 +20,31 @@ a {
     font-size: titulo_secundario
     }
 // End Header ---------------------------------
-// Start Sections ------------------------------
-h2{
-    font-size: titulo_secundario 
-    color: link_color
-}
-p{
-    color: white
-}
-#home {
-    background-color: main_color
-    height: 100%
-    width: 100%
-    overflow: hidden
-}
-#portfolio {
-    background:main_color 
-    height: 100%;
-    width: 100%;
-    padding-top: 20px
-    padding-bottom: 20px
-}
+
+// secciones de prueva
 #about {
+    background-color: main_color
+    height: 100vh
+    width: 100%
+}
+#services {
+    background:main_color 
+    height: 100vh
+    width: 100%
+}
+#portafolio {
     background-color: paleta
-    height: 100vh;
-    width: 100%;
+    height: 100vh
+    width: 100%
 }
 #contact {
     background-color: rgb(154, 45, 45);
     height: 100vh;
     width: 100%;
 }
-.container{
-    mixin-contenedor()
-    }
-.items{
-    mixin-items()
-    }
-.iconos{
-    color white
-    }
-.cotainerJ{
-    width 100%
-    height 100vh
-    }
-.logo{
-    text-align: center
-    }
-.logoJ{
-    width 80%
-    }
+
+// End secc pruevas
+
 .footer {
 	background-color: black;
 	color: white;
@@ -130,98 +61,3 @@ p{
 	text-decoration: none;
 }            
 // End Sections -------------------------------
-
-
-// Slideshow container ------------------------
-.slideshow-container {
-  /* max-width: 1000px; */
-  width: 100%;
-  position: relative;
-  margin: auto;
-
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-    
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: black;
-  font-size: 15px;
-  padding: 250px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-//   line-height: 50%
-
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-// End Slide Show

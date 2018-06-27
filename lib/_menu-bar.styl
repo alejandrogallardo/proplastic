@@ -1,0 +1,84 @@
+// Start Master Menu ---------------------------------
+header {
+    width 100%
+    top: 0
+}
+header nav{
+    width: 100%
+    background: nav-bar
+    position: fixed
+    z-index: 1
+}
+.burguerbtn{
+    display: none
+    }
+.logo-link-r img{
+    width 100px
+    float left
+    padding: 13px 30px 0px 15px
+}
+header nav ul{
+	overflow: hidden 
+	list-style: none
+}
+header nav ul li{
+    float: left
+}
+header nav ul li a{
+    color: linkColor
+    display: block
+    padding: 20px
+    text-decoration: none
+    font-family: 'Roboto', sans-serif 
+    text-transform: uppercase
+    line-height: 40px
+}
+header nav ul li i{
+    margin-right: 10px
+}
+header nav ul li a:hover{
+	background: linkHover
+}
+.active{
+    background: linkHover
+}
+header nav ul{
+    float: right 
+}
+// Start Menu responsive
+@media mw
+    header nav
+        width 50%
+        height 100%
+        position: fixed
+        transition: 300ms
+        left: -100%
+        margin-top: 72px
+    header nav ul li
+        display: block
+        float: none
+        border-bottom: 1px solid rgba(255, 255,255, 0.3)
+    header nav ul
+        float: none
+    .logo-link-r
+        display: none    
+    .list-menu
+        padding-left: 0  
+    .burguerbtn
+        display: block
+        width: 100%
+        background: nav-bar
+        display: flex
+        justify-content: space-between
+        position: fixed
+        z-index 2 
+    .burguerbtn .fa-bars
+        display: block
+        padding: 20px
+        color: linkColor 
+        font-size: 2em
+    .logo-link img
+        width 100px  
+        padding: 8px 0 0 10px        
+// End Menu responsive
+// Menu Master End ------------------------------------
