@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    
 </head>
 <body id="top">
 
@@ -47,33 +49,91 @@
                 </li>
             </ul>
         </nav>
+        <!-- End Menu Bar -->
+        <!-- Start Image Header -->
+        <div class="header">
+            <!-- Header Text -->
+            <div>
+                <!-- <img class="imgCover" src="img/img_fjords_wide.jpg" alt=""> -->
+                <i class="fas fa-recycle fa-5x"></i>
+                <p class="txtCover">Bienvenidos a ProPlast</p>
+            </div>
+        </div>        
+        <!-- End Image Header -->
     </header>
-    <!-- End Menu Bar -->
-
-    <!-- Start Header -->
-    <div class="header">
-        <!-- Header Text -->
-        <div>
-            <p class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error veniam architecto placeat a quis sequi distinctio,
-                accusamus, delectus eveniet, provident asperiores amet cupiditate vel fuga temporibus alias in voluptatum
-                ad?
-            </p>
-        </div>
-    </div>
     <!-- End Header -->
 
     <!-- Start Sections -->
-    <section id="about">
-        <h1>nosotros</h1>
-    </section>
-    <section id="services">
-        <h1>servicos</h1>
-    </section>
-    <section id="portafolio">
-        <h1>portafolio</h1>
-    </section>
-    <section id="contact">
-        <h1>contacto</h1>
+    <section class="main">
+        <section class="acerca" id="about">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h1 class="titulo">Nuestros Servicios</h1>
+                    </div>
+                </div>
+
+                <div class="row text-center aaa">
+					<div class="col-sm-4 caracteristica">
+                            <i class="fas fa-industry fa-5x"></i>
+                            <h4 class="primera_linea">Lorem Ipsum</h4>
+                            <p class="parrafo text-justify">Dolor sit amet, consectetur adipiscing elit. In dignissim odio ut sagittis elementum.</p>
+					</div>
+					<div class="col-sm-4 caracteristica">
+						<i class="fas fa-truck fa-5x"></i>
+						<h4 class="primera_linea">Aenean rhoncus augue</h4>
+						<p class="parrafo text-justify">Curabitur nisi enim, placerat ac convallis id, posuere vehicula ligula.</p>
+					</div>
+					<div class="col-sm-4 caracteristica">
+						<i class="fas fa-recycle fa-5x"></i>
+						<h4 class="primera_linea">Praesent</h4>
+						<p class="parrafo text-justify">Nulla diam mi, pharetra eget mattis sed, mollis non ligula.</p>
+					</div>
+				</div>
+
+            </div>
+        </section>
+        <section id="services" class="fotos">
+			<div class="container">
+                    <div class="row text-center">
+                            <div class="col-md-12">
+                                <h1 class="titulo">Nuestros Servicios</h1>
+                            </div>
+                        </div>
+				<div class="rowa">
+					<div class="col-md-12">
+						<div class="row foto aaa">
+							<div class="col-xs-4 thumb">
+								<img class="img-responsive" src="img/thumb1.jpg" alt="">
+							</div>
+							<div class="col-xs-8 texto">
+								<h2 class="titulo azul">Vivamus ultricies lacus eu ligula porttitor</h2>
+								<p class="parrafo">
+									Aenean rhoncus augue nec finibus malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec diam odio, dictum non gravida in, suscipit id est.
+								</p>
+							</div>
+						</div>
+
+						<div class="row foto aaa">
+							<div class="col-xs-8 texto">
+								<h2 class="titulo naranja derecha">Aliquam ligula erat, porttitor</h2>
+								<p class="parrafo derecha">Nunc a semper felis. Ut at tellus massa. Nulla sit amet massa blandit, accumsan orci in, gravida massa. Sed mollis, est at porttitor volutpat, est augue molestie mi, ut pretium quam nunc sed dui. Nunc sed purus nunc.</p>
+							</div>
+							<div class="col-xs-4 thumb">
+								<img src="img/thumb2.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <section id="portafolio">
+            <h1>portafolio</h1>
+        </section>
+        <section id="contact">
+            <h1>contacto</h1>
+        </section>
     </section>
     <!-- End Sections -->
 
@@ -92,5 +152,8 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js/proplast.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
 </body>
 </html>

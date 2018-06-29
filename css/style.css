@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  border: 0;
+}
+body {
+  font-size: 16px;
+  font-family: 'roboto';
+}
 header {
   width: 100%;
   top: 0;
@@ -7,6 +15,9 @@ header nav {
   background: #9ca6a5;
   position: fixed;
   z-index: 1;
+}
+.menu {
+  height: 80px !important;
 }
 .burguerbtn {
   display: none;
@@ -43,6 +54,11 @@ header nav ul li a:hover {
 }
 header nav ul {
   float: right;
+}
+@media only screen and (max-width: 1000px) {
+  header nav ul li a {
+    padding: 15px;
+  }
 }
 @media only screen and (max-width: 768px) {
   header nav {
@@ -93,56 +109,54 @@ header nav ul {
     padding: 8px 0 0 10px;
   }
 }
-* {
-  margin: 0;
-  border: 0;
-}
 .header {
-  background-color: #00f;
-  height: 90vh;
-}
-.test {
-  padding-top: 250px;
-  padding-left: 80px;
-  padding-right: 80px;
+  width: 100%;
+  height: 100%;
+  background: #5780a4;
   text-align: center;
-  font-size: 2em;
 }
-#about {
-  background-color: #adadad;
-  height: 100vh;
-  width: 100%;
-}
-#services {
-  background: #adadad;
-  height: 100vh;
-  width: 100%;
-}
-#portafolio {
-  background-color: #5780a4;
-  height: 100vh;
-  width: 100%;
-}
-#contact {
-  background-color: #9a2d2d;
-  height: 100vh;
-  width: 100%;
-}
-.footer {
-  background-color: #000;
+.header .fa-recycle {
+  line-height: 500px;
   color: #fff;
+  font-size: 200px;
+}
+.txtCover {
   text-align: center;
-  padding: 15px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.container {
+  padding: 70px;
+}
+.acerca {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+.titulo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.aaa {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-.develop {
-  font-size: 12px;
+.containera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-.develop a {
-  color: #8a8a8a;
-  text-decoration: none;
+.rowa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
