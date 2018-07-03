@@ -181,6 +181,15 @@ header nav ul {
 .fa-8x {
   color: #fff;
 }
+.fa-8x:hover {
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  text-shadow: 1px 1px 2px #000, 0 0 25px #00f, 0 0 5px #00008b;
+  -webkit-transform: translate(0, -5px);
+  -ms-transform: translate(0, -5px);
+  transform: translate(0, -5px);
+}
 .caracteristica {
   padding: 20px;
 }
