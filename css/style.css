@@ -74,6 +74,7 @@ header nav ul {
   }
   header nav ul {
     float: none;
+    background: #55b6ba;
   }
   .logo-link-r {
     display: none;
