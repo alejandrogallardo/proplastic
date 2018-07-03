@@ -5,6 +5,7 @@
 body {
   font-size: 16px;
   font-family: 'roboto';
+  background-color: #f2f2f2;
 }
 header {
   width: 100%;
@@ -12,7 +13,7 @@ header {
 }
 header nav {
   width: 100%;
-  background: #9ca6a5;
+  background: #55b6ba;
   position: fixed;
   z-index: 1;
 }
@@ -47,20 +48,15 @@ header nav ul li i {
   margin-right: 10px;
 }
 header nav ul li a:hover {
-  background: #83e0d3;
+  background: #309ca1;
 }
 .active {
-  background: #83e0d3;
+  background: #309ca1;
 }
 header nav ul {
   float: right;
 }
 @media only screen and (max-width: 1000px) {
-  header nav ul li a {
-    padding: 15px;
-  }
-}
-@media only screen and (max-width: 768px) {
   header nav {
     width: 50%;
     height: 100%;
@@ -88,7 +84,7 @@ header nav ul {
   .burguerbtn {
     display: block;
     width: 100%;
-    background: #9ca6a5;
+    background: #55b6ba;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -112,51 +108,95 @@ header nav ul {
 .header {
   width: 100%;
   height: 100%;
-  background: #5780a4;
+  background: #015e62;
   text-align: center;
 }
-.header .fa-recycle {
-  line-height: 500px;
-  color: #fff;
-  font-size: 200px;
+.imgCover {
+  margin-top: 100px;
+  width: 80%;
 }
 .txtCover {
   text-align: center;
   color: #fff;
+  font-size: 40px;
   text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.main {
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
 }
 .container {
-  padding: 70px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
-.acerca {
-  padding-top: 50px;
-  padding-bottom: 150px;
+.titulo-section {
+  text-transform: uppercase;
+  font-size: 2em;
+  padding-bottom: 25px;
 }
-.titulo {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.desC {
+  width: 95%;
+  margin: auto;
 }
-.aaa {
+.text-justify {
+  text-align: justify;
+}
+.text-center {
+  text-align: center;
+}
+.Item-Nous {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.iconSec {
+  width: 290px;
+  height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
 }
-.containera {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.iCl-1 {
+  background: #ff504b;
 }
-.rowa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.iCl-2 {
+  background: #309ca1;
+}
+.iCl-3 {
+  background: #3ccc45;
+}
+.fa-8x {
+  color: #fff;
+}
+.caracteristica {
+  padding: 20px;
+}
+.primera_linea {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .Item-Nous {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .text-justify {
+    width: 90%;
+    margin: auto;
+  }
 }
