@@ -1,7 +1,7 @@
 .header{
     width 100%
     height 100%
-    background paleta
+    background: #4462AC
     text-align: center
     }
 .imgCover{
@@ -72,7 +72,7 @@
     // color: paleta
     transition: 0.4s
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue
-    transform: translate(0, -5px)
+    // transform: translate(0, -5px)
     }    
 .caracteristica{
     padding 20px
@@ -89,9 +89,6 @@
         width 90%
         margin: auto    
 // ---------------------------------------
-#portafolio{
-    height 100vh
-    }
 .foto{
     display: flex
     flex-direction: row
@@ -115,29 +112,179 @@
     .foto
         display: flex
         flex-direction: column
-
+// Productos ------------------------------------
+.productos{
+    height 100%
+    }
+.productos .row{
+    padding: 15px
+    }    
+.productos .container .titulo-section{
+    text-align: center
+    }
+.productos .container .imgBox{
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+    }  
+.productos .container .imgBox .text-box{
+    width 550px
+    height 250px
+    background: #c3c3c3
+    padding: 10px 90px 10px 20px
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    }
+.productos .container .imgBox .text-box h2{
+    margin-top: 70px
+    text-align: right
+    }    
+.productos .container .imgBox .text-box p{
+    margin: 0
+    line-height: 25px
+    text-align: right 
+    }        
+.productos .container .imgBox .img-box i{
+    width 230px
+    height 230px
+    background: #c3c3c3
+    position: relative
+    margin auto
+    right: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 10px
+    box-shadow: 3px 3px 20px 5px #888888
+  }
+  //Elementos derecha -------------------
+  .productos .container .derecha{
+    display: flex
+    flex-direction: row-reverse
+    align-items: center
+    justify-content: center
+    }  
+  .productos .container .derecha .img-box i{
+    width 230px
+    height 230px
+    background: #c3c3c3
+    position: relative
+    margin auto
+    left: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 10px
+    box-shadow: 3px 3px 20px 5px #888888
+  }  
+  .productos .container .derecha .text-box h2{
+    margin-top: 70px
+    text-align: left 
+    }    
+  .productos .container .derecha .text-box p{
+    margin: 0
+    line-height: 25px
+    text-align: left 
+    }  
+  .productos .container .derecha .text-box{
+    width 550px
+    height 250px
+    background: #c3c3c3
+    padding: 10px 20px 10px 90px
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    }  
+// Footer --------------------------------------
 .footer{
     background: footerColor
-    margin: auto
     width 100%
     }
 .footer .titulo-section{
     text-align: center
-    padding-top: 30px
+    padding-top: 80px
+    color: #f2f2f2
     }      
 .footer .contaliner{
-    width 90%
+    width 100%
+    max-width 1140px
     margin: auto
     display: flex
     flex-direction: row
     padding-bottom: 30px
-    }    
+    // align-items: center
+    }      
 .footer .contaliner .contacto{
-    padding: 20px
-    } 
+    display: flex
+    justify-content: center
+    }    
+.footer .contaliner .direccion p{
+    font-family: 'roboto', system-ui
+    font-size: 1em
+    color: #f2f2f2
+    line-height: 80px
+    }
+.footer .contaliner .direccion i{
+    padding-right: 15px
+    }         
 .footer .contaliner .direccion{
-    padding: 20px
-    }             
+    width: 60%
+    }        
+// .footer .contaliner .direccion iframe{
+//     width: 90%
+//     }                  
+//--------------------------
+form {
+	width: 60%
+	// border: 1px solid #38506a
+	margin: 20px
+	padding: 20px
+	border-radius: 5px
+	// background-color: #e7e7e7
+}
+label {
+	font-size: 12px
+	display: none
+	width: 100%
+}
+input, textarea {
+	font-family: 'roboto', system-ui
+    font-size: 1em
+	margin-bottom: 20px
+	width: 100%
+	padding: 15px
+	box-sizing: border-box
+	border: 1px solid #ccc
+    background: #c3c3c3
+}
+::placeholder{
+    color #f2f2f2
+}
+textarea {
+	resize: vertical
+	min-height: 100px
+	max-height: 300px
+}
+input:focus, textarea:focus {
+	border: 1px solid #38506a
+}
+input[type="submit"] {
+    width: 130px
+	margin-bottom: 1px
+	text-transform: uppercase
+	// border: 1px solid #38506a
+	color: #f2f2f2
+	background-color: paleta
+	transition: all 0.3s ease-in-out
+}
+input[type="submit"]:hover{
+	background: #38506a
+	cursor: pointer
+	color: #000000
+}
+//----------------------
 .footer .copyright{
     background: black
     height 50px
@@ -153,3 +300,10 @@
     .footer .copyright
         display: flex
         flex-direction: column
+    .footer .contaliner
+        display: flex
+        flex-direction: column 
+        justify-content: center  
+        align-items: center 
+    .footer .contaliner .direccion p
+        line-height: 40px
