@@ -59,9 +59,11 @@
      <!-- Start Image Header -->
      <div class="header">
         <!-- Header Text -->
-        <div>
+        <div class="panel">
             <img class="imgCover" src="img/plasticInject.svg" alt="">
-            <p class="txtCover">Bienvenidos a ProPlast</p>
+            <p class="txtCover" data-animate-scroll='{"y": "20", 
+            "alpha": "0", 
+            "duration": "1.5"}'>Bienvenidos a ProPlast</p>
         </div>
     </div>        
     <!-- End Image Header -->
@@ -117,9 +119,13 @@
 							<div class="col thumb">
 								<img class="img-responsive" src="img/thumb1.jpg" alt="">
 							</div>
-							<div class="col texto">
-								<h2 class="titulo azul">Vivamus ultricies lacus eu ligula porttitor</h2>
-								<p class="parrafo">
+							<div class="col texto panel">
+								<h2 class="titulo azul" data-animate-scroll='{"x": "-20", 
+                                "alpha": "0", 
+                                "duration": "1.5"}'>Vivamus ultricies lacus eu ligula porttitor</h2>
+								<p class="parrafo" data-animate-scroll='{"x": "20", 
+                                "alpha": "0", 
+                                "duration": "1.8"}'>
 									Aenean rhoncus augue nec finibus malesuada. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec diam odio, dictum non gravida in, suscipit id est.
 								</p>
 							</div>
@@ -127,8 +133,12 @@
 
 						<div class="row foto">
 							<div class="col texto">
-								<h2 class="titulo naranja derecha">Aliquam ligula erat, porttitor</h2>
-								<p class="parrafo derecha">Nunc a semper felis. Ut at tellus massa. Nulla sit amet massa blandit, accumsan orci in, gravida massa. Sed mollis, est at porttitor volutpat, est augue molestie mi, ut pretium quam nunc sed dui. Nunc sed purus nunc.</p>
+								<h2 class="titulo naranja derecha" data-animate-scroll='{"x": "-20", 
+                                "alpha": "0", 
+                                "duration": "1.5"}'>Aliquam ligula erat, porttitor</h2>
+								<p class="parrafo derecha" data-animate-scroll='{"x": "20", 
+                                "alpha": "0", 
+                                "duration": "1.8"}'>Nunc a semper felis. Ut at tellus massa. Nulla sit amet massa blandit, accumsan orci in, gravida massa. Sed mollis, est at porttitor volutpat, est augue molestie mi, ut pretium quam nunc sed dui. Nunc sed purus nunc.</p>
 							</div>
 							<div class="col thumb">
 								<img src="img/thumb2.jpg" alt="">
@@ -147,7 +157,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col imgBox">
+                    <div class="col imgBox panel" data-animate-scroll='{"x": "-100","y": "0", "alpha": "0", "duration": ".5"}'>
                         <div class="text-box">
                             <h2>Producto 1</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque laudantium voluptatem porro blanditiis doloribus, animi ea repellendus quae? Consectetur, magni!</p>
@@ -158,7 +168,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col imgBox derecha">
+                    <div class="col imgBox derecha panel" data-animate-scroll='{"x": "100",
+                    "y": "0", 
+                    "alpha": "0", 
+                    "duration": ".5"}'>
                         <div class="text-box">
                             <h2>Producto 1</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque laudantium voluptatem porro blanditiis doloribus, animi ea repellendus quae? Consectetur, magni!</p>
@@ -169,7 +182,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col imgBox">
+                    <div class="col imgBox panel" data-animate-scroll='{"x": "-100","y": "0", "alpha": "0", "duration": ".5"}'>
                         <div class="text-box">
                             <h2>Producto 1</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque laudantium voluptatem porro blanditiis doloribus, animi ea repellendus quae? Consectetur, magni!</p>
@@ -180,7 +193,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col imgBox derecha">
+                    <div class="col imgBox derecha panel" data-animate-scroll='{"x": "100",
+                    "y": "0", 
+                    "alpha": "0", 
+                    "duration": ".5"}'>
                         <div class="text-box">
                             <h2>Producto 1</h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque laudantium voluptatem porro blanditiis doloribus, animi ea repellendus quae? Consectetur, magni!</p>
@@ -235,10 +251,18 @@
     </footer>
     <!-- End copyright -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+    <script src="js/animate-scroll.js"></script>
+    <script src="js/EaselPlugin.js"></script>
+    <script src="js/ScrollToPlugin.js"></script>
+    <script src="js/TweenMax.js"></script>
     <script src="js/proplast.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script>  
+      $(document).animateScroll();
+    </script>
 
 </body>
 </html>
