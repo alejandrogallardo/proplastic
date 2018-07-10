@@ -1,7 +1,6 @@
 // Start Master Menu ---------------------------------
 header {
     width 100%
-    top: 0
 }
 header nav{
     width: 100%
@@ -9,23 +8,23 @@ header nav{
     position: fixed
     z-index: 1
 }
-.menu{
-    height 80px!important
-    }
+header nav ul{
+	list-style: none
+}
 .burguerbtn{
     display: none
     }
 .logo-link-r img{
     width 100px
-    // float left
     padding: 13px 30px 0px 15px
 }
-header nav ul{
-	overflow: hidden 
-	list-style: none
-}
 header nav ul li{
-    float: left
+    // float: left //como hay un menu desplegable se usa inline-block
+    display: inline-block
+    position: relative
+}
+header nav ul li:hover{
+    background: linkHover
 }
 header nav ul li a{
     color: linkColor
@@ -39,24 +38,42 @@ header nav ul li a{
 header nav ul li i{
     margin-right: 10px
 }
-header nav ul li a:hover{
-	background: linkHover
-}
 .active{
     background: linkHover
 }
 header nav ul{
     float: right 
 }
+header nav ul li .children{
+    display: none
+    background: nav-bar
+    position: absolute
+    padding-left: 0
+    background: #011836
+}
+header nav ul li:hover .children{
+    display: block
+}
+header nav ul li .children li{
+    display: block
+    // overflow: hidden
+}
+header nav ul li .children li a{
+    display: block
+}
+header nav ul li .fa-angle-down{
+    margin-left: 15px
+}
 // Start Menu responsive
 @media wMenu
     header nav
-        width 50%
-        height 100%
+        width 60%
+        height: 100% 
         position: fixed
         transition: 300ms
         left: -100%
         margin-top: 72px
+        overflow: scroll
     header nav ul li
         display: block
         float: none
@@ -83,6 +100,12 @@ header nav ul{
         font-size: 2em
     .logo-link img
         width 100px  
-        padding: 8px 0 0 10px        
+        padding: 8px 0 0 10px
+    header nav ul li:hover .children
+        display: none      
+    header nav ul li .children
+        width: 100%
+        position: relative
+                  
 // End Menu responsive
 // Menu Master End ------------------------------------

@@ -95,4 +95,7 @@ function main() {
             $('body').removeClass('noscroll');
         }
     });
+    $('.submenu').click(function(){
+        $(this).children('.children').slideToggle();
+    });
 }  
