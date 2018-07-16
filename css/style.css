@@ -545,3 +545,54 @@ input[type="submit"]:hover {
     line-height: 40px;
   }
 }
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: auto;
+}
+.card {
+/* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 15px;
+  width: 330px;
+}
+.card img {
+  padding: 15px;
+  width: 300px;
+}
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card .con {
+  padding: 2px 16px;
+}
+.card .con h4 {
+  font-family: 'roboto';
+  font-size: 32px;
+  padding-bottom: 5%;
+  color: #ffa500;
+}
+@media only screen and (max-width: 1000px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .card {
+    margin: auto;
+  }
+}

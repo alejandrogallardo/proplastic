@@ -14,32 +14,136 @@
 </head>
 <body>
     <!-- Start Menu Bar -->
-    <div class="mMenu">
-            <nav>
-                <a class="logo-link" href="index.html">
-                    <img src="img/proplasticLogo.svg" alt="Logo ProPlast">
-                </a>
-                <ul>
-                    <li>
-                        <a class="active" href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Quienes Somos</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="juguetes.html">Jueguetilandia</a>
-                    </li>
-                </ul>
-            </nav>
+    <header id="navB" class="nav-bar">
+        <div id="burguer" class="burguerbtn">
+            <a class="logo-link  scroll-effect" href="#" data-ancla="inicio">
+                <img src="img/proplasticLogo.svg" alt="Logo ProPlast">
+            </a>
+            <i class="fas fa-bars"></i>
         </div>
+        <nav id="nMenu" class="menu">
+            <a class="logo-link-r  scroll-effect" href="#top" data-ancla="inicio">
+                <img src="img/proplasticLogo.svg" alt="Logo ProPlast">
+            </a>
+            <ul class="list-menu">
+                <li class="scroll-effect">
+                    <a class="active" href="index.html" data-ancla="inicio">
+                        <i class="fas fa-home"></i>Inicio</a>
+                </li>
+                <li class="scroll-effect">
+                    <a href="#about" data-ancla="inicio">nosotros</a>
+                </li>
+                <li class="scroll-effect">
+                    <a href="#services" data-ancla="inicio">servicios</a>
+                </li>
+                <li class="scroll-effect submenu">
+                    <a href="#portafolio" data-ancla="inicio">productos<i class="fas fa-angle-down caret"></i></a>
+                    <ul class="children">
+                        <li><a href="#">hogar</a></li>
+                        <li><a href="#">industrial</a></li>    
+                    </ul>
+                </li>
+                <li class="scroll-effect">
+                        <a href="#contact" data-ancla="inicio">contacto</a>
+                    </li>
+                <li>
+                    <a href="juguetes.html">Jueguetilandia</a>
+                </li>
+            </ul>
+        </nav>
         <!-- End Menu Bar -->
-    <div class="containerJ">
-        <div class="logo">
-            <img class="logoJ" src="img/juguetilandia.png" alt="">
+    <!-- End Header -->
+     <!-- Start Image Header -->
+     <div class="header">
+        <!-- Header Text -->
+        <div class="panel">
+            <img class="imgCover" src="img/juguetilandia.svg" alt="">
+            <p class="txtCover" data-animate-scroll='{"y": "20", 
+            "alpha": "0", 
+            "duration": "1.5"}'>Bienvenidos a ProPlast</p>
         </div>
-    </div>
+    </div>        
+    <!-- End Image Header -->
+    <section class="main">
+        <section class="catalogo">
+                <div class="row">
+                    <div class="card">
+                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <div class="con">
+                          <h4 class="titleToy">Juguete 1</h4> 
+                          <p class="desToy">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, dicta.</p> 
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <div class="con">
+                          <h4><b>Juguete 1
+                          </b></h4> 
+                          <p>Descripción: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae libero nihil dicta.</p> 
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <div class="con">
+                          <h4>Juguete 1</h4> 
+                          <p>Descripción</p> 
+                        </div>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <div class="con">
+                          <h4><b>Juguete 1
+                          </b></h4> 
+                          <p>Descripción</p> 
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <div class="con">
+                          <h4><b>Juguete 1
+                          </b></h4> 
+                          <p>Descripción</p> 
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <div class="con">
+                          <h4><b>Juguete 1
+                          </b></h4> 
+                          <p>Descripción</p> 
+                        </div>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <div class="con">
+                          <h4><b>Juguete 1
+                          </b></h4> 
+                          <p>Descripción</p> 
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <div class="con">
+                          <h4><b>Juguete 1
+                          </b></h4> 
+                          <p>Descripción</p> 
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <div class="con">
+                          <h4><b>Juguete 1
+                          </b></h4> 
+                          <p>Descripción</p> 
+                        </div>
+                      </div>
+                </div> 
+        </section>
+
+    </section>
 </body>
 </html>
