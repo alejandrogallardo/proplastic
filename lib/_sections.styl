@@ -116,6 +116,7 @@
 // Productos ------------------------------------
 .productos{
     height 100%
+    width 100%
     }
 .productos .row{
     padding: 15px
@@ -127,7 +128,7 @@
     display: flex
     flex-direction: row
     align-items: center
-    justify-content: flex-end
+    // justify-content: flex-end
     }  
 .productos .container .imgBox .text-box{
     width 550px
@@ -141,6 +142,7 @@
 .productos .container .imgBox .text-box h2{
     margin-top: 70px
     text-align: right
+    padding-bottom: 3%
     }    
 .productos .container .imgBox .text-box p{
     margin: 0
@@ -198,6 +200,29 @@
     display: flex
     flex-direction: column
     }  
+@media wMenu
+    .productos
+        width: 100%
+        overflow: hidden
+    .productos .container .imgBox
+        display: flex
+        flex-direction: column
+        margin: auto
+    .productos .container .imgBox .text-box
+        height: 100%  
+        width: 200px
+        padding: 30px
+    .productos .container .imgBox .text-box h2 
+        text-align: left
+        margin-top: 0px
+    .productos .container .imgBox .text-box p
+        text-align: left        
+        margin-bottom: 30px
+    .productos .container .imgBox .img-box i
+        right: 0 
+        top: -25px  
+    .productos .container .derecha .img-box i
+        left: 0    
 // Footer --------------------------------------
 .footer{
     background: footerColor

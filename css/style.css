@@ -273,6 +273,7 @@ header nav ul li .fa-angle-down {
 }
 .productos {
   height: 100%;
+  width: 100%;
 }
 .productos .row {
   padding: 15px;
@@ -291,9 +292,6 @@ header nav ul li .fa-angle-down {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 .productos .container .imgBox .text-box {
   width: 550px;
@@ -312,6 +310,7 @@ header nav ul li .fa-angle-down {
 .productos .container .imgBox .text-box h2 {
   margin-top: 70px;
   text-align: right;
+  padding-bottom: 3%;
 }
 .productos .container .imgBox .text-box p {
   margin: 0;
@@ -395,6 +394,42 @@ header nav ul li .fa-angle-down {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+@media only screen and (max-width: 1000px) {
+  .productos {
+    width: 100%;
+    overflow: hidden;
+  }
+  .productos .container .imgBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto;
+  }
+  .productos .container .imgBox .text-box {
+    height: 100%;
+    width: 200px;
+    padding: 30px;
+  }
+  .productos .container .imgBox .text-box h2 {
+    text-align: left;
+    margin-top: 0px;
+  }
+  .productos .container .imgBox .text-box p {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .productos .container .imgBox .img-box i {
+    right: 0;
+    top: -25px;
+  }
+  .productos .container .derecha .img-box i {
+    left: 0;
+  }
 }
 .footer {
   background: #3c4045;
@@ -555,7 +590,6 @@ input[type="submit"]:hover {
   margin: auto;
 }
 .card {
-/* Add shadows to create the "card" effect */
   -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   -webkit-transition: 0.3s;
@@ -582,6 +616,9 @@ input[type="submit"]:hover {
   padding-bottom: 5%;
   color: #ffa500;
 }
+.card .con p {
+  padding-bottom: 15px;
+}
 @media only screen and (max-width: 1000px) {
   .row {
     display: -webkit-box;
@@ -594,5 +631,6 @@ input[type="submit"]:hover {
   }
   .card {
     margin: auto;
+    margin-bottom: 20px;
   }
 }
