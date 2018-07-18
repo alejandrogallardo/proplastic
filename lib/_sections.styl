@@ -1,7 +1,7 @@
 .header{
     width 100%
     height 100%
-    background: #4462AC
+    background-image: url("../img/small_stepsB.png")
     text-align: center
     }
 .imgCover{
@@ -32,18 +32,22 @@
     text-transform: uppercase
     font-size: 2em
     padding-bottom: 25px
+    color: sectionTitle
     }
-.desC{
+.desC p{
     width 95%
     margin: auto
     }          
 .text-justify{
     text-align: justify
-    line-height: 25px
+    line-height: 30px
     }        
 .text-center{
-    text-align: center
+    text-align: center 
     }
+.text-justify{
+    color: articulo
+    }    
 .Item-Nous{
     display: flex
     } 
@@ -80,6 +84,7 @@
 .primera_linea{
     padding-top: 20px
     padding-bottom: 20px
+    color: #4462AC
     }
 @media wMenu
     .Item-Nous
@@ -95,7 +100,7 @@
     align-items: center
     }
 .foto .texto h2{
-    color: #646469
+    color: subTitulo
     padding-bottom: 2%
     }   
 .fotos .foto .thumb img{
@@ -113,6 +118,12 @@
     .foto
         display: flex
         flex-direction: column
+    .fotos .foto .texto
+        padding: 10px 
+        text-align: justify   
+    .fotos .foto .texto .derecha
+        padding: 10px 
+        text-align: justify   
 // Productos ------------------------------------
 .productos{
     height 100%
@@ -120,6 +131,9 @@
     }
 .productos .row{
     padding: 15px
+    }    
+.decP{
+    margin-bottom: 30px
     }    
 .productos .container .titulo-section{
     text-align: center
@@ -200,6 +214,15 @@
     display: flex
     flex-direction: column
     }  
+    .azul{
+        color: #309CA1
+        }
+    .rojo {
+        color: #FF504B
+        } 
+    .parrafo {
+        color: articulo
+        }       
 @media wMenu
     .productos
         width: 100%

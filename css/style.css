@@ -133,7 +133,7 @@ header nav ul li .fa-angle-down {
 .header {
   width: 100%;
   height: 100%;
-  background: #4462ac;
+  background-image: url("../img/small_stepsB.png");
   text-align: center;
 }
 .imgCover {
@@ -161,17 +161,21 @@ header nav ul li .fa-angle-down {
   text-transform: uppercase;
   font-size: 2em;
   padding-bottom: 25px;
+  color: #3ccc45;
 }
-.desC {
+.desC p {
   width: 95%;
   margin: auto;
 }
 .text-justify {
   text-align: justify;
-  line-height: 25px;
+  line-height: 30px;
 }
 .text-center {
   text-align: center;
+}
+.text-justify {
+  color: #646469;
 }
 .Item-Nous {
   display: -webkit-box;
@@ -217,6 +221,7 @@ header nav ul li .fa-angle-down {
 .primera_linea {
   padding-top: 20px;
   padding-bottom: 20px;
+  color: #4462ac;
 }
 @media only screen and (max-width: 1000px) {
   .Item-Nous {
@@ -246,7 +251,7 @@ header nav ul li .fa-angle-down {
   align-items: center;
 }
 .foto .texto h2 {
-  color: #646469;
+  color: subTitulo;
   padding-bottom: 2%;
 }
 .fotos .foto .thumb img {
@@ -270,6 +275,14 @@ header nav ul li .fa-angle-down {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .fotos .foto .texto {
+    padding: 10px;
+    text-align: justify;
+  }
+  .fotos .foto .texto .derecha {
+    padding: 10px;
+    text-align: justify;
+  }
 }
 .productos {
   height: 100%;
@@ -277,6 +290,9 @@ header nav ul li .fa-angle-down {
 }
 .productos .row {
   padding: 15px;
+}
+.decP {
+  margin-bottom: 30px;
 }
 .productos .container .titulo-section {
   text-align: center;
@@ -394,6 +410,15 @@ header nav ul li .fa-angle-down {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+.azul {
+  color: #309ca1;
+}
+.rojo {
+  color: #ff504b;
+}
+.parrafo {
+  color: #646469;
 }
 @media only screen and (max-width: 1000px) {
   .productos {
@@ -580,6 +605,23 @@ input[type="submit"]:hover {
     line-height: 40px;
   }
 }
+.bodyToy {
+  background-image: url("../img/textura.png");
+  background-repeat: repeat;
+}
+.headerJ {
+  background-image: url("../img/dust_scratches.png");
+}
+.imgJ {
+  margin-bottom: 70px;
+}
+.tituloToys {
+  text-transform: uppercase;
+  color: #ff504b;
+  font-family: 'roboto';
+  font-size: 32px;
+  margin-top: 32px;
+}
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -590,18 +632,24 @@ input[type="submit"]:hover {
   margin: auto;
 }
 .card {
+  background: #f2f2f2;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
   border: 1px solid rgba(255,255,255,0.3);
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   width: 330px;
+  border-bottom: 5px solid #309ca1;
 }
 .card img {
   padding: 15px;
   width: 300px;
+  opacity: 0.8;
+}
+.card img:hover {
+  opacity: 1;
 }
 .card:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -614,10 +662,11 @@ input[type="submit"]:hover {
   font-family: 'roboto';
   font-size: 32px;
   padding-bottom: 5%;
-  color: #ffa500;
+  color: #4462ac;
 }
 .card .con p {
   padding-bottom: 15px;
+  color: #646469;
 }
 @media only screen and (max-width: 1000px) {
   .row {
@@ -632,5 +681,8 @@ input[type="submit"]:hover {
   .card {
     margin: auto;
     margin-bottom: 20px;
+  }
+  .tituloToys {
+    text-align: center;
   }
 }
