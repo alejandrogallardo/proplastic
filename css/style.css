@@ -691,6 +691,7 @@ input[type="submit"]:hover {
   .card {
     margin: auto;
     margin-bottom: 20px;
+    width: 100%;
   }
   .tituloToys {
     text-align: center;
