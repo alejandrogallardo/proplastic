@@ -112,7 +112,17 @@ header nav ul li .fa-angle-down {
     position: fixed;
     z-index: 2;
   }
+  .activeM {
+    visibility: hidden;
+    position: absolute;
+  }
   .burguerbtn .fa-bars {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    font-size: 2em;
+  }
+  .burguerbtn .fa-times {
     display: block;
     padding: 20px;
     color: #fff;

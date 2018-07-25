@@ -98,7 +98,10 @@ function main() {
     $('.submenu').click(function(){
         $(this).children('.children').slideToggle();
     });
-    // $('a').click(function(){
-    //     $('nav').animate({ left: '-100%' });
-    // });
 }  
+$(document).ready(function(){
+    $('.burguerbtn').click(function(){
+          $('.fa-bars').toggleClass("activeM");
+          $('.fa-times').toggleClass("activeM");
+      });   
+  });

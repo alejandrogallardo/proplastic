@@ -24,6 +24,7 @@
                 <img src="img/proplasticLogo.svg" alt="Logo ProPlast">
             </a>
             <i class="fas fa-bars"></i>
+            <i class="fas fa-times activeM"></i>
         </div>
         <nav id="nMenu" class="menu">
             <a class="logo-link-r  scroll-effect" href="#top" data-ancla="inicio">
@@ -187,11 +188,42 @@
             </div>
         </footer>
 <!-- End copyright -->
-<script src="js/proplast.js"></script>
 <script>  
+$(document).ready(main);
+var contador = 1;
+function main() {
+    $('.burguerbtn').click(function () {
+        if (contador == 1) {
+            contador = 0;
+            $('nav').animate({ left: '0' });
+            $('body').addClass('noscroll');
+        }
+        else {
+            contador = 1;
+            $('nav').animate({ left: '-100%' });
+            $('body').removeClass('noscroll');
+        }
+    });
+    $(window).resize(function () {
+        contador = 1;
+        if (window.innerWidth > 768) {
+            $('nav').removeAttr('style');
+            $('body').removeClass('noscroll');
+        }
+    });
+    $('.submenu').click(function(){
+        $(this).children('.children').slideToggle();
+    });
+}
 $(document).ready(function() {
 		$(".fancybox").fancybox();
-	});
+    });
+    $(document).ready(function(){
+        $('.burguerbtn').click(function(){
+            $('.fa-bars').toggleClass("activeM");
+            $('.fa-times').toggleClass("activeM");
+    });   
+});
 </script>
 </body>
 </html>
