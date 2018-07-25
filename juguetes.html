@@ -11,6 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>    
 </head>
 <body class="bodyToy">
     <!-- Start Menu Bar -->
@@ -67,20 +71,15 @@
                 <h2 class="tituloToys">Catalogo de Juguetes</h2>
             </div>
                 <div class="row">
-                    <div class="card panel" data-animate-scroll='{"alpha": "0",
-                    "y":"50", 
-                    "duration": "0.5",
-                    "scaleX": "0",
-                    "scaleY": "0",
-                    "ease": "Elastic.easeIn"}'>
-                        <img src="img/toys/toy.jpg" alt="Avatar">
+                    <div class="card panel gallery">
+                        <a class="fancybox" rel="group" href="img/toys/big/volteo800.jpg"><img src="img/toys/volteo400.jpg" alt="Avatar"></a>
                         <div class="con">
-                          <h4 class="titleToy">Juguete Prueba</h4> 
+                          <h4 class="titleToy">Juguete 1</h4> 
                           <p class="desToy">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, dicta.</p> 
                         </div>
                       </div>
                       <div class="card">
-                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <a class="fancybox" rel="group" href="img/toys/big/aguas800.jpg"><img src="img/toys/aguas400.jpg" alt="Avatar"></a>
                         <div class="con">
                           <h4><b>Juguete 1
                           </b></h4> 
@@ -88,7 +87,7 @@
                         </div>
                       </div>
                       <div class="card">
-                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <a class="fancybox" rel="group" href="img/toys/big/aguas800.jpg"><img src="img/toys/bocho400.jpg" alt="Avatar"></a>
                         <div class="con">
                           <h4>Juguete 1</h4> 
                           <p>Descripción</p> 
@@ -97,7 +96,7 @@
                 </div>
                 <div class="row">
                     <div class="card">
-                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <a class="fancybox" rel="group" href="img/toys/big/aguas800.jpg"><img src="img/toys/bomberos400.jpg" alt="Avatar"></a>
                         <div class="con">
                           <h4><b>Juguete 1
                           </b></h4> 
@@ -105,7 +104,7 @@
                         </div>
                       </div>
                       <div class="card">
-                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <a class="fancybox" rel="group" href="img/toys/big/aguas800.jpg"><img src="img/toys/camion400.jpg" alt="Avatar"></a>
                         <div class="con">
                           <h4><b>Juguete 1
                           </b></h4> 
@@ -113,7 +112,7 @@
                         </div>
                       </div>
                       <div class="card">
-                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <a class="fancybox" rel="group" href="img/toys/big/aguas800.jpg"><img src="img/toys/carrusel400.jpg" alt="Avatar"></a>
                         <div class="con">
                           <h4><b>Juguete 1
                           </b></h4> 
@@ -123,7 +122,7 @@
                 </div>
                 <div class="row">
                     <div class="card">
-                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <a class="fancybox" rel="group" href="img/toys/big/aguas800.jpg"><img src="img/toys/cemento400.jpg" alt="Avatar"></a>
                         <div class="con">
                           <h4><b>Juguete 1
                           </b></h4> 
@@ -131,7 +130,7 @@
                         </div>
                       </div>
                       <div class="card">
-                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <a class="fancybox" rel="group" href="img/toys/big/aguas800.jpg"><img src="img/toys/juegodecocina400.jpg" alt="Avatar"></a>
                         <div class="con">
                           <h4><b>Juguete 1
                           </b></h4> 
@@ -139,7 +138,7 @@
                         </div>
                       </div>
                       <div class="card">
-                        <img src="img/toys/toy.jpg" alt="Avatar">
+                        <a class="fancybox" rel="group" href="img/toys/big/aguas800.jpg"><img src="img/toys/tazas400.jpg" alt="Avatar"></a>
                         <div class="con">
                           <h4><b>Juguete 1
                           </b></h4> 
@@ -188,40 +187,11 @@
             </div>
         </footer>
 <!-- End copyright -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/animate-scroll.js"></script>
-<script src="js/EaselPlugin.js"></script>
-<script src="js/ScrollToPlugin.js"></script>
-<script src="js/TweenMax.js"></script>
+<script src="js/proplast.js"></script>
 <script>  
-  $(document).animateScroll();
-
-  $(document).ready(main);
-var contador = 1;
-function main() {
-    $('.burguerbtn').click(function () {
-        if (contador == 1) {
-            contador = 0;
-            $('nav').animate({ left: '0' });
-            $('body').addClass('noscroll');
-        }
-        else {
-            contador = 1;
-            $('nav').animate({ left: '-100%' });
-            $('body').removeClass('noscroll');
-        }
-    });
-    $(window).resize(function () {
-        contador = 1;
-        if (window.innerWidth > 768) {
-            $('nav').removeAttr('style');
-            $('body').removeClass('noscroll');
-        }
-    });
-    $('.submenu').click(function(){
-        $(this).children('.children').slideToggle();
-    });
-}
+$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
 </script>
 </body>
 </html>

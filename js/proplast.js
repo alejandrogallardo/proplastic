@@ -98,4 +98,7 @@ function main() {
     $('.submenu').click(function(){
         $(this).children('.children').slideToggle();
     });
+    // $('a').click(function(){
+    //     $('nav').animate({ left: '-100%' });
+    // });
 }  
